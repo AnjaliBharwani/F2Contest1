@@ -8,11 +8,11 @@ function printDeveloper() {
   const developers = data.filter((person) => person.profession === "developer");
   console.log(developers);
 }
-printDeveloper();
+// printDeveloper();
+
 
 // ************************************************************************************************************
 
-// 2. Add Data
 // 2. Add Data
 function addData() {
     // creating an empty object newData to store worker data
@@ -39,7 +39,7 @@ function removeAdmin() {
 // console.log("Admins removed:", filteredData);
 
 }
-removeAdmin();
+// removeAdmin();
 
 // ************************************************************************************************************
 
@@ -52,7 +52,7 @@ function concatenateArray() {
   const concatenatedArray = [...data, ...dummyArray];
   console.log(concatenatedArray);
 }
-concatenateArray();
+// concatenateArray();
 
 
 
@@ -65,7 +65,7 @@ function averageAge() {
   const average = totalAge / data.length;
   console.log(`Average Age: ${average}`);
 }
-averageAge();
+// averageAge();
 
 // ************************************************************************************************************
 
@@ -74,7 +74,7 @@ function checkAgeAbove25() {
   const isAbove25 = data.some((person) => person.age > 25);
   console.log(`Is there anyone above 25? ${isAbove25}`);
 }
-checkAgeAbove25();
+// checkAgeAbove25();
 
 // ************************************************************************************************************
 
@@ -83,7 +83,7 @@ function uniqueProfessions() {
   const professions = [...new Set(data.map((person) => person.profession))];
   console.log(professions);
 }
-uniqueProfessions();
+// uniqueProfessions();
 
 // ************************************************************************************************************
 
@@ -92,7 +92,7 @@ function sortByAge() {
   const sortedData = [...data].sort((a, b) => a.age - b.age);
   console.log(sortedData);
 }
-sortByAge();
+// sortByAge();
 
 // ************************************************************************************************************
 
@@ -106,7 +106,7 @@ function updateJohnsProfession() {
   });
   console.log(updatedData);
 }
-updateJohnsProfession();
+// updateJohnsProfession();
 
 // ************************************************************************************************************
 
@@ -122,6 +122,6 @@ function getTotalProfessions() {
     `Total Developers: ${developerCount}, Total Admins: ${adminCount}`
   );
 }
-getTotalProfessions();
+// getTotalProfessions();
 
 // ************************************************************************************************************
